@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+  </head>
+  <body>
+
+  <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+      <div class="row">
+        <div style="margin-top: 15%">
+
+          <h2 id="title">How To Build A Portfolio for <em>Free </em></h2>
+          <h5> 
+            A brief guide to getting started on your little corner of the web— your claim at a few special megabytes of the millions of terabytes in cyberspace ❤ 
+
+            <a href="http://tabb.me/" target="_blank">Taylor Tabb</a></h4>
+
+            <h4>1.0 Domain Names</h4>  
+            <h6>A domain name is your custom URL. The address that points a browser to the content of your personal site. Domains are purchased through registrars— We'll be using Namecheap, because they offer free domains to students. Start by heading to <a href="https://nc.me/" target="_blank">https://nc.me</a>.
+            </h6>
+
+            <h5>1.1 Search for the domain name of your dreams </h5>
+            <h6>A domain name should be short, succient, and easy to type. Many people prefer .com, .org, .me or .io becasuse they're easy to recognize. Consider something like lastname.me, firstnamelastinitial.com, firstnamelastname.io, other personally identifiable terms.
+            </h6>
+            <h6>
+              Once you've found a domain name you like, click "Complete the Order." In the next screen, select "GitHub Pages," and give your .edu email address when asked. 
+            </h6>
+            <h6>
+              You'll be asked a fair bit of personal information during registration— as long as you select "whois guard," this information is not made public. 
+            </h6>
+
+            <h4>2.0 Set Up Hosting</h4>
+            <h6>A hosting service is what will serve your webpages to everyone who views your site. While traditionally expensive, GitHub offers a free hosting package.
+            </h6>
+
+            <h5>2.1 Create a GitHub Account </h5>
+            <h6>Head to <a href="https://github.com/" target="_blank">github.com</a> and create an account. 
+            </h6>
+
+            <h5>2.2 Create a GitHub Pages Repository </h5>
+            <h6>Now we need to create the a repository to store and host your site files in. On GitHub, click the + in the top right corner, and select "New Repository" and name it <code>username.github.io</code>, where you replace <code>username</code> with you actual GitHub username. Now navigate to this repository, and create a new file called <code>index.html</code>. Type anything (or nothing) into this document and hit save (we will delete this later) </h6>
+
+              <h5>2.2 Linking Your Namecheap Domain to GitHub Pages</h5>
+              <h6>Now we need to direct your domain name to your github pages repo.</h6> 
+              <h6> Log into Namecheap.com, then click <code>Domain List</code> > <code>manage</code> > <code>Advanced DNS</code>. You'll now need to edit and create new records to match the table below</h6>
+
+              <table class="u-full-width">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Host</th>
+                    <th>Value</th>
+                    <th>TTL</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>CNAME Record</td>
+                    <td>WWW</td>
+                    <td><code>your-GitHub-username</code>@github.io</td>
+                    <td>Automatic</td>
+                  </tr>
+                  <tr>
+                    <td>A Record</td>
+                    <td>@</td>
+                    <td>185.199.108.153</td>
+                    <td>Automatic</td>
+                  </tr>
+                  <tr>
+                    <td>A Record</td>
+                    <td>@</td>
+                    <td>185.199.109.153</td>
+                    <td>Automatic</td>
+                  </tr>
+                  <tr>
+                    <td>A Record</td>
+                    <td>@</td>
+                    <td>185.199.110.153</td>
+                    <td>Automatic</td>
+                  </tr>
+                  <tr>
+                    <td>A Record</td>
+                    <td>@</td>
+                    <td>185.199.111.153</td>
+                    <td>Automatic</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h6> Now click <code>Save All Changes</code>. Your GitHub Pages and Domain name are now linked! Give it ~10 min for the internet nodes to catch up to these changes, then your site will be vieweable at your domain. </h6>
+
+            <h4>3.0 Making Your Site</h4>
+            <h6>Now we'll get set with some content. </h6>
+
+            <h5>3.1 Set up GitHub Desktop</h5>
+            <h6>The easiest way to get started is with GitHub Desktop. Download that at <a href="https://desktop.github.com/" target="_blank">desktop.github.com</a>. Install the application, and log in with your github account.</h6>
+
+            <h6>Now head back your GitHub account on <a href="https://github.com/" target="_blank">github.com</a> and click on your <code>username</code>.github.io repository, then click <code>Clone or Download</code>><code>Open in Desktop</code>
+
+
+
+          </div>
+        </div>
+      </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
