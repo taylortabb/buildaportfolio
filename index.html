@@ -37,90 +37,90 @@
           <h2 id="title">How To Build A Portfolio for <em>Free </em></h2>
           <h6> 
             A brief guide to getting started on your little corner of the web — your claim at a few special megabytes of the millions of terabytes in cyberspace <a href="https://docs.google.com/presentation/d/1FfDVGG9gD5og4CepvlQQLO9mXZNgj7KsjXrscqxVQd8/edit?usp=sharing" target="_blank">❤</a> <a href="http://tabb.me/" target="_blank">Taylor Tabb</a></h4>
-</h6>
-<table class="u-full-width">
-  <thead>
-    <tr>
-      <th></th>
-    </tr>
-  </thead>
-</table>
+          </h6>
+          <table class="u-full-width">
+            <thead>
+              <tr>
+                <th></th>
+              </tr>
+            </thead>
+          </table>
 
-            <h4>1.0 Domain Names</h4>  
-            <h6>A domain name is your custom URL. The address that points a browser to the content of your personal site. Domains are purchased through registrars— We'll be using Namecheap, because they offer free domains to students. Start by heading to <a href="https://nc.me/" target="_blank">https://nc.me</a>.
-            </h6>
+          <h4>1.0 Domain Names</h4>  
+          <h6>A domain name is your custom URL. The address that points a browser to the content of your personal site. Domains are purchased through registrars— We'll be using Namecheap, because they offer free domains to students. Start by heading to <a href="https://nc.me/" target="_blank">https://nc.me</a>.
+          </h6>
 
-            <h5>1.1 Search for the domain name of your dreams </h5>
-            <h6>A domain name should be short, succinct, and easy to type. Many people prefer .com, .org, .me or .io because they're easy to recognize. Consider something like lastname.me, firstnamelastinitial.com, firstnamelastname.io, other personally identifiable terms.
-            </h6>
-            <h6>
-              Once you've found a domain name you like, click "Complete the Order." In the next screen, select "GitHub Pages," and give your .edu email address when asked. 
-            </h6>
-            <h6>
-              You'll be asked a fair bit of personal information during registration— as long as you select "whois guard," this information is not made public. 
-            </h6>
+          <h5>1.1 Search for the domain name of your dreams </h5>
+          <h6>A domain name should be short, succinct, and easy to type. Many people prefer .com, .org, .me or .io because they're easy to recognize. Consider something like lastname.me, firstnamelastinitial.com, firstnamelastname.io, other personally identifiable terms.
+          </h6>
+          <h6>
+            Once you've found a domain name you like, click "Complete the Order." In the next screen, select "GitHub Pages," and give your .edu email address when asked. 
+          </h6>
+          <h6>
+            You'll be asked a fair bit of personal information during registration— as long as you select "whois guard," this information is not made public. 
+          </h6>
 
-            <h4>2.0 Set Up Hosting</h4>
-            <h6>A hosting service is what will serve your webpages to everyone who views your site. While traditionally expensive, GitHub offers a free hosting package.
-            </h6>
+          <h4>2.0 Set Up Hosting</h4>
+          <h6>A hosting service is what will serve your webpages to everyone who views your site. While traditionally expensive, GitHub offers a free hosting package.
+          </h6>
 
-            <h5>2.1 Create a GitHub Account </h5>
-            <h6>Head to <a href="https://github.com/" target="_blank">github.com</a> and create an account. 
-            </h6>
+          <h5>2.1 Create a GitHub Account </h5>
+          <h6>Head to <a href="https://github.com/" target="_blank">github.com</a> and create an account. 
+          </h6>
 
-            <h5>2.2 Create a GitHub Pages Repository </h5>
-            <h6>Now we need to create the a repository to store and host your site files in. On GitHub, click the + in the top right corner, and select "New Repository" and name it <code>username.github.io</code>, where you replace <code>username</code> with you actual GitHub username. Now navigate to this repository, and create a new file called <code>index.html</code>. Type anything (or nothing) into this document and hit save (we will delete this later) </h6> 
+          <h5>2.2 Create a GitHub Pages Repository </h5>
+          <h6>Now we need to create the a repository to store and host your site files in. On GitHub, click the + in the top right corner, and select "New Repository" and name it <code>username.github.io</code>, where you replace <code>username</code> with you actual GitHub username. Now navigate to this repository, and create a new file called <code>index.html</code>. Type anything (or nothing) into this document and hit save (we will delete this later) </h6> 
 
-            <h6> Now click <code>Settings</code> scroll down to GitHub Pages, and type in your domain name under Custom Domain. Click Save.
+          <h6> Now click <code>Settings</code> scroll down to GitHub Pages, and type in your domain name under Custom Domain. Click Save.
 
-              <h5>2.2 Linking Your Namecheap Domain to GitHub Pages</h5>
-              <h6>Now we need to direct your domain name to your github pages repo.</h6> 
-              <h6> Log into Namecheap.com, then click <code>Domain List</code> > <code>manage</code> > <code>Advanced DNS</code>. You'll now need to edit and create new records to match the table below</h6>
+            <h5>2.2 Linking Your Namecheap Domain to GitHub Pages</h5>
+            <h6>Now we need to direct your domain name to your github pages repo.</h6> 
+            <h6> Log into Namecheap.com, then click <code>Domain List</code> > <code>manage</code> > <code>Advanced DNS</code>. You'll now need to edit and create new records to match the table below</h6>
 
-              <table class="u-full-width">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Host</th>
-                    <th>Value</th>
-                    <th>TTL</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>CNAME Record</td>
-                    <td>WWW</td>
-                    <td><code>your-GitHub-username</code>@github.io</td>
-                    <td>Automatic</td>
-                  </tr>
-                  <tr>
-                    <td>A Record</td>
-                    <td>@</td>
-                    <td>185.199.108.153</td>
-                    <td>Automatic</td>
-                  </tr>
-                  <tr>
-                    <td>A Record</td>
-                    <td>@</td>
-                    <td>185.199.109.153</td>
-                    <td>Automatic</td>
-                  </tr>
-                  <tr>
-                    <td>A Record</td>
-                    <td>@</td>
-                    <td>185.199.110.153</td>
-                    <td>Automatic</td>
-                  </tr>
-                  <tr>
-                    <td>A Record</td>
-                    <td>@</td>
-                    <td>185.199.111.153</td>
-                    <td>Automatic</td>
-                  </tr>
-                </tbody>
-              </table>
+            <table class="u-full-width">
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Host</th>
+                  <th>Value</th>
+                  <th>TTL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>CNAME Record</td>
+                  <td>WWW</td>
+                  <td><code>your-GitHub-username</code>@github.io</td>
+                  <td>Automatic</td>
+                </tr>
+                <tr>
+                  <td>A Record</td>
+                  <td>@</td>
+                  <td>185.199.108.153</td>
+                  <td>Automatic</td>
+                </tr>
+                <tr>
+                  <td>A Record</td>
+                  <td>@</td>
+                  <td>185.199.109.153</td>
+                  <td>Automatic</td>
+                </tr>
+                <tr>
+                  <td>A Record</td>
+                  <td>@</td>
+                  <td>185.199.110.153</td>
+                  <td>Automatic</td>
+                </tr>
+                <tr>
+                  <td>A Record</td>
+                  <td>@</td>
+                  <td>185.199.111.153</td>
+                  <td>Automatic</td>
+                </tr>
+              </tbody>
+            </table>
 
-              <h6> Now click <code>Save All Changes</code>. Your GitHub Pages and Domain name are now linked! Give it ~10 min for the Internet nodes to catch up to these changes, then your site will be viewable at your domain. </h6>
+            <h6> Now click <code>Save All Changes</code>. Your GitHub Pages and Domain name are now linked! Give it ~10 min for the Internet nodes to catch up to these changes, then your site will be viewable at your domain. </h6>
 
             <h4>3.0 Making Your Site</h4>
             <h6>Now we'll get set with some content. </h6>
@@ -217,63 +217,67 @@
             
             <input class="button-primary" type="submit" value="Generate!" target="_blank">
           </form>
- -->
+        -->
 
 
-          <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
+        <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
 
-            <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
+          <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
 
-          </div>
-        </div>
-
-            <h5>3.2 Setup The Demo Site</h5>
-            <h6>Click <a href="https://github.com/taylortabb/samplesite/archive/master.zip" target="_blank"> here </a> to download the simple Demo site. This is a simple, responsive, and beautiful text-based site I made using a style template called Skeleton.</h6>
-
-            <h6> Unzip the file, and move the contents of the folder into the folder you created for your <code>username</code>.github.io repository. </h6>
-
-            <h6>Open GitHub Desktop and select <code>Commit to Master</code> then <code>Push Origin</code></h6>
-
-            <h6> Now open a web browser, type in your Domain name, and take a peek around the Demo Site. </h6> 
-
-            <h5>3.3 Making Your Site Yours</h5>
-            <h6>On Your Computer, double click the index.html file to open in a web browser— this is your local copy of the site. Then right click on the file and open it with a text editor (i.e. Sublime, textedit, word pad, etc.)</h6>
-
-            <h6> The document is heavily commented to help you figure out what you can edit to make your site yours. </h6>
-
-            <h5>3.4 Styling Your Site</h5>
-            <h6> In your website's folder on desktop, there's a folder named CSS. This contains the two stylesheets that give your site it's look and feel. While anything (font size, background color, typeface, etc.) can be customized, it's pretty well set up as it currently is. If you mess up these files unintentionally, you can re-download the demo site and replace the CSS folder. 
-            </h6>
-            <h6>
-            One specific thing you might like to change is the typeface. You can do this by heading to <a href="https://fonts.google.com/" target="_blank">fonts.google.com</a> and finding a font you like. 
-          </h6>
-          <h6>
-            Then, open <code>index.html</code> and find the line <pre><code>link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"</code></pre>Just replace <code>Raleway</code> with the name of the font you've chosen— ideally ensure that font has weights of 400, 300, and 600 available. 
-</h6>
-<h6>
-          Then go into the CSS folder and open <code>Skeleton.css</code>. Locate the line <pre><code>font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; </code></pre> and replace <code>Raleway</code> with the name of the font you've chosen.
-</h6>
-<h6> Then push changes using GitHub Desktop.
-
-   <h4>4.0 Maintaininig, Growing, and Customizing</h4>
-            
-            <h6>At this point, you've got yourself a website! What comes next is up to you. </h6>
-
-            <h5>4.1 Building Your Site Out With Skeleton.css</h5>
-            
-            <h6>Our current GitHub Pages hosting is great for simple websites with mostly text and a few images/videos as the one we've created, You can even create more pages (About Me, Calendar, Photos, Blog, Music, etc) to build your site out. Just start with a copy of the current frame of index.html, and edit and change to craft what you want! Skeleton.css has fantastic and simple documentation at <a href="http://getskeleton.com/" target="_blank">getskeleton.com</a> to help you get styled up. </h6>
-
-            <h6> 
-
-            <h5>4.2 HTML5UP, Squarespace, and More</h5>
-              <h6>It's only a little more complex to take your website to the next level. Hundreds of free templates exist online, and some are pretty spectacular. <a href="https://html5up.net/" target="_blank">html5up.net</a> has some great options. If you use one of these, you'll be replacing everything in your current website's folder.</h6>
-
-              <h6>Then, there's the pay option— <a href="https://www.squarespace.com/" target="_blank">Squarespace</a>. Squarespace is absolutely fantastic for building totally beutful portfolio sites with a simple drag and drop interface, no code required. There is 50% off first year with a .edu email address</h6>
-
-
-          </div>
         </div>
       </div>
+
+      <h5>3.2 Setup The Demo Site</h5>
+      <h6>Click <a href="https://github.com/taylortabb/samplesite/archive/master.zip" target="_blank"> here </a> to download the simple Demo site. This is a simple, responsive, and beautiful text-based site I made using a style template called Skeleton.</h6>
+
+      <h6> Unzip the file, and move the contents of the folder into the folder you created for your <code>username</code>.github.io repository. </h6>
+
+      <h6>Open GitHub Desktop and select <code>Commit to Master</code> then <code>Push Origin</code></h6>
+
+      <h6> Now open a web browser, type in your Domain name, and take a peek around the Demo Site. </h6> 
+
+      <h5>3.3 Making Your Site Yours</h5>
+      <h6>On Your Computer, double click the index.html file to open in a web browser— this is your local copy of the site. Then right click on the file and open it with a text editor (i.e. Sublime, textedit, word pad, etc.)</h6>
+
+      <h6> The document is heavily commented to help you figure out what you can edit to make your site yours. </h6>
+
+      <h5>3.4 Styling Your Site</h5>
+      <h6> In your website's folder on desktop, there's a folder named CSS. This contains the two stylesheets that give your site it's look and feel. While anything (font size, background color, typeface, etc.) can be customized, it's pretty well set up as it currently is. If you mess up these files unintentionally, you can re-download the demo site and replace the CSS folder. 
+      </h6>
+      <h6>
+        One specific thing you might like to change is the typeface. You can do this by heading to <a href="https://fonts.google.com/" target="_blank">fonts.google.com</a> and finding a font you like. 
+      </h6>
+      <h6>
+        Then, open <code>index.html</code> and find the line <pre><code>link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"</code></pre>Just replace <code>Raleway</code> with the name of the font you've chosen— ideally ensure that font has weights of 400, 300, and 600 available. 
+      </h6>
+      <h6>
+        Then go into the CSS folder and open <code>Skeleton.css</code>. Locate the line <pre><code>font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; </code></pre> and replace <code>Raleway</code> with the name of the font you've chosen.
+      </h6>
+      <h6> Then push changes using GitHub Desktop.
+
+       <h4>4.0 Maintaininig, Growing, and Customizing</h4>
+
+       <h6>At this point, you've got yourself a website! What comes next is up to you. </h6>
+
+       <h5>4.1 Building Your Site Out With Skeleton.css</h5>
+
+       <h6>Our current GitHub Pages hosting is great for simple websites with mostly text and a few images/videos as the one we've created, You can even create more pages (About Me, Calendar, Photos, Blog, Music, etc) to build your site out. Just start with a copy of the current frame of index.html, and edit and change to craft what you want! Skeleton.css has fantastic and simple documentation at <a href="http://getskeleton.com/" target="_blank">getskeleton.com</a> to help you get styled up. </h6>
+
+
+       <h5>4.1 Adding Tracking With Google Analytics</h5>
+
+       <h6> It's pretty easy and free to add tracking to your website. This lets you see some info (when and how often your site has been viewed, geography of viewers, referring web page, popular pages, etc) just by pasted a few lines of code into your index.html, but you'll need to set up Google Analytics at <a href="https://analytics.google.com" target="_blank">analytics.google.com</a> first. Also of note— some people are morally against tracking. Personally I don't see an issue tracking views of your personal website, but do keep in mind that developing your own personal opinion on data collecting is important.</h6>
+
+
+       <h5>4.3 HTML5UP, Squarespace, and More</h5>
+       <h6>It's only a little more complex to take your website to the next level. Hundreds of free templates exist online, and some are pretty spectacular. <a href="https://html5up.net/" target="_blank">html5up.net</a> has some great options. If you use one of these, you'll be replacing everything in your current website's folder.</h6>
+
+       <h6>Then, there's the pay option— <a href="https://www.squarespace.com/" target="_blank">Squarespace</a>. Squarespace is absolutely fantastic for building totally beutful portfolio sites with a simple drag and drop interface, no code required. There is 50% off first year with a .edu email address</h6>
+
+
+     </div>
+   </div>
+ </div>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
